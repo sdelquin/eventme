@@ -1,7 +1,7 @@
 import config
 from eventme import EventMe
 
-date1 = "07/06/2018"
+date1 = "09/06/2018"
 date2 = "09/06/2018"
 
 e = EventMe(
@@ -12,3 +12,4 @@ e = EventMe(
     config.SENDGRID["FROM_NAME"]
 )
 e.scrap(date1, date2)
+e.send("sdelquin@gmail.com")

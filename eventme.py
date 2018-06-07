@@ -11,7 +11,10 @@ class EventMe:
         self.email = SendGrid(sg_api, sg_from, sg_from_name)
 
     def scrap(self, date1, date2):
-        self.title = f"Eventos en Tenerife ({date1} - {date2})"
+        if date1 == date2:
+            self.title = f"Eventos en Tenerife ({date1})"
+        else:
+            self.title = f"Eventos en Tenerife ({date1} - {date2})"
         params = {
             "field_fecha_value[min][date]": date1,
             "field_fecha_value[max][date]": date2
@@ -22,7 +25,8 @@ class EventMe:
 
         self.events = []
         soup = BeautifulSoup(content, "html.parser")
-        for container in soup.find_all("div", "small-post"):
+        ul = soup.find("ul", "list-small-post")
+        for container in ul.find_all("div", "small-post"):
             img = container.find("div", "thumb").a.img["src"]
             post = container.find("div", "post-c-wrap")
             url = self.base_url + post.h4.a["href"]
