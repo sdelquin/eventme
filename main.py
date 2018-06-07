@@ -1,8 +1,6 @@
 import config
+from utils import get_weekend
 from eventme import EventMe
-
-date1 = "09/06/2018"
-date2 = "09/06/2018"
 
 e = EventMe(
     config.BASE_URL,
@@ -11,5 +9,4 @@ e = EventMe(
     config.SENDGRID["FROM_EMAIL"],
     config.SENDGRID["FROM_NAME"]
 )
-e.scrap(date1, date2)
-e.send("sdelquin@gmail.com")
+e.scrap(*get_weekend())

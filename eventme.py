@@ -11,6 +11,7 @@ class EventMe:
         self.email = SendGrid(sg_api, sg_from, sg_from_name)
 
     def scrap(self, date1, date2):
+        date1, date2 = date1.strftime("%d/%m/%Y"), date2.strftime("%d/%m/%Y")
         if date1 == date2:
             self.title = f"Eventos en Tenerife ({date1})"
         else:
