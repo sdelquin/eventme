@@ -10,3 +10,4 @@ e = EventMe(
     config.SENDGRID["FROM_NAME"]
 )
 e.scrap(*get_weekend())
+e.send(*config.RECIPIENTS)

@@ -5,3 +5,6 @@ SENDGRID = {
     "FROM_EMAIL": "xxxxxxxx",
     "FROM_NAME": "xxxxxxxx"
 }
+RECIPIENTS = (
+    "xxxxxxxx",
+)
