@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 from sgw.core import SendGrid
-from time import sleep
 
 
 class EventMe:
