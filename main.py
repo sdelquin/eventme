@@ -39,4 +39,10 @@ else:
     date1, date2 = (datetime.datetime.strptime(d, "%d/%m/%Y") for d in dates)
 
 e.scrap(date1, date2)
-e.send(*config.RECIPIENTS)
+try:
+    with open(config.RECIPIENTS) as f:
+        recipients = [r.strip() for r in f.readlines()]
+except FileNotFoundError:
+    print("You must first create the file for recipients!")
+else:
+    e.send(*recipients)

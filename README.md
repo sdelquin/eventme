@@ -16,6 +16,22 @@ $ vim config.py
 
 > Set the corresponding values for each variable
 
+Create `recipients.txt` and add the emails of the recipients (one per line):
+
 ~~~console
-$ python main.py
+$ echo "example@example.com" > recipients.txt
+~~~
+
+Launch the script:
+
+~~~console
+$ python main.py --when=today
+~~~
+
+## Asking for some help
+
+If you need more help:
+
+~~~console
+$ python main.py --help
 ~~~
