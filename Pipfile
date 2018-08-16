@@ -13,6 +13,7 @@ sgw = {git = "https://github.com/sdelquin/sgw.git"}
 ipython = "*"
 "flake8" = "*"
 rope = "*"
+"fabric3" = "*"
 
 [requires]
 python_version = "3.6"
