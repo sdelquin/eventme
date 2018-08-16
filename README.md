@@ -9,7 +9,7 @@ It makes a post request over the url http://lagenda.org/programacion/hoy and scr
 ## Launch it!
 
 ~~~console
-$ pip install -r requirements.txt
+$ pipenv install
 $ cp config.tmpl.py config.py
 $ vim config.py
 ~~~
@@ -25,7 +25,7 @@ $ echo "example@example.com" > recipients.txt
 Launch the script:
 
 ~~~console
-$ python main.py --when=today
+$ pipenv run python main.py --when=today
 ~~~
 
 ## Asking for some help
@@ -33,5 +33,5 @@ $ python main.py --when=today
 If you need more help:
 
 ~~~console
-$ python main.py --help
+$ pipenv run python main.py --help
 ~~~

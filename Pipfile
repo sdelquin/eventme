@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+"beautifulsoup4" = "*"
+requests = "*"
+docopt = "*"
+sgw = {git = "https://github.com/sdelquin/sgw.git"}
+
+[dev-packages]
+ipython = "*"
+"flake8" = "*"
+rope = "*"
+
+[requires]
+python_version = "3.6"

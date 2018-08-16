@@ -1,4 +1,0 @@
-beautifulsoup4==4.6.0
-requests==2.18.4
-git+https://github.com/sdelquin/sgw.git
-docopt==0.6.2
