@@ -20,9 +20,9 @@ import datetime
 e = EventMe(
     config.BASE_URL,
     config.SEARCH_URL,
-    config.SENDGRID["API_KEY"],
-    config.SENDGRID["FROM_EMAIL"],
-    config.SENDGRID["FROM_NAME"]
+    config.SENDGRID_APIKEY,
+    config.SENDGRID_FROM_EMAIL,
+    config.SENDGRID_FROM_NAME
 )
 
 arguments = docopt(__doc__)

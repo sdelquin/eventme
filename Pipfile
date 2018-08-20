@@ -5,9 +5,10 @@ name = "pypi"
 
 [packages]
 "beautifulsoup4" = "*"
-requests = "*"
 docopt = "*"
 sgw = {git = "https://github.com/sdelquin/sgw.git"}
+prettyconf = "*"
+requests = "*"
 
 [dev-packages]
 ipython = "*"

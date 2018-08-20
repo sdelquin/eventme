@@ -1,4 +1,4 @@
-config.py
 *.pyc
 recipients.txt
 .vscode
+.env

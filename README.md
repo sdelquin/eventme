@@ -10,11 +10,9 @@ It makes a post request over the url http://lagenda.org/programacion/hoy and scr
 
 ~~~console
 $ pipenv install
-$ cp config.tmpl.py config.py
-$ vim config.py
+$ vim .env   # set the corresponding values
+...
 ~~~
-
-> Set the corresponding values for each variable
 
 Create `recipients.txt` and add the emails of the recipients (one per line):
 
