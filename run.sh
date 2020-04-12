@@ -1,5 +1,6 @@
 #!/bin/bash
 # Master script.
 
+source ~/.virtualenvs/eventme/bin/activate
 cd "$(dirname "$0")"
-exec pipenv run python main.py --when=next-weekend
+exec python main.py --when=next-weekend
